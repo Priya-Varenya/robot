@@ -29,7 +29,7 @@ def intent_received(hermes, intent_message):
         sentence += 'the weather '
     elif intent_message.intent.intent_name == 'Varenya:hi':
         print('hi')
-        bus.write_byte(add,1)
+        #bus.write_byte(add,1)
         sentence += 'Yes? What can I do for you '
     elif intent_message.intent.intent_name == 'Varenya:greet':
         print('greet')
