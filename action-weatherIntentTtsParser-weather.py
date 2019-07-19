@@ -26,6 +26,9 @@ def intent_received(hermes, intent_message):
     elif intent_message.intent.intent_name == 'Varenya:hi':
         print('hi')
         sentence += 'Yes? What can I do for you '
+    elif intent_message.intent.intent_name == 'Varenya:greet':
+        print('greet')
+        sentence += 'I welcome all the guests to this event '
     else:
         return
 
