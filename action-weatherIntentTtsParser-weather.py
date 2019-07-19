@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 from hermes_python.hermes import Hermes
-#import smbus
+import smbus
 
-#bus=smbus.SMBus(1)
-#add=0x04
+bus=smbus.SMBus(1)
+add=0x04
 
 MQTT_IP_ADDR = "localhost"
 MQTT_PORT = 1883
@@ -29,7 +29,7 @@ def intent_received(hermes, intent_message):
         sentence += 'the weather '
     elif intent_message.intent.intent_name == 'Varenya:hi':
         print('hi')
-        #bus.write_byte(add,1)
+        bus.write_byte(add,1)
         sentence += 'Yes? What can I do for you '
     elif intent_message.intent.intent_name == 'Varenya:greet':
         print('greet')
