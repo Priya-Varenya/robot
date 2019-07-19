@@ -23,7 +23,7 @@ def intent_received(hermes, intent_message):
     elif intent_message.intent.intent_name == 'searchWeatherForecastItem':
         print('searchWeatherForecastItem')
         sentence += 'the weather '
-    elif intent_message.intent.intent_name == 'hi':
+    elif intent_message.intent.intent_name == 'Varenya:hi':
         print('hi')
         sentence += 'Yes? What can I do for you '
     else:
