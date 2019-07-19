@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 from hermes_python.hermes import Hermes
-import smbus
+#import smbus
 
-bus=smbus.SMBus(1)
-add=0x04
+#bus=smbus.SMBus(1)
+#add=0x04
 
 MQTT_IP_ADDR = "localhost"
 MQTT_PORT = 1883
