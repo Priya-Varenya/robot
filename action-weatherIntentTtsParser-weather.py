@@ -9,7 +9,7 @@ MQTT_ADDR = "{}:{}".format(MQTT_IP_ADDR, str(MQTT_PORT))
 
 
 def intent_received(hermes, intent_message):
-    sentence = 'You asked for '
+    sentence = ''
 
     if intent_message.intent.intent_name == 'searchWeatherForecast':
         print('searchWeatherForecast')
@@ -23,6 +23,9 @@ def intent_received(hermes, intent_message):
     elif intent_message.intent.intent_name == 'searchWeatherForecastItem':
         print('searchWeatherForecastItem')
         sentence += 'the weather '
+    elif intent_message.intent.intent_name == 'hi':
+        print('hi')
+        sentence += 'Yes?What can I do for you '
     else:
         return
 
