@@ -25,7 +25,7 @@ def intent_received(hermes, intent_message):
         sentence += 'the weather '
     elif intent_message.intent.intent_name == 'hi':
         print('hi')
-        sentence += 'Yes?What can I do for you '
+        sentence += 'Yes? What can I do for you '
     else:
         return
 
