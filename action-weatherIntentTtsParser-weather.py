@@ -26,7 +26,7 @@ def intent_received(hermes, intent_message):
         sentence += 'the weather '
     elif intent_message.intent.intent_name == 'Varenya:hi':
         print('hi')
-        os.system('nohup python3 /home/pi/Desktop/write.py')
+        print(os.system('nohup python3 /home/pi/Desktop/write.py'))
         sentence += 'Yes? What can I do for you '
     elif intent_message.intent.intent_name == 'Varenya:greet':
         print('greet')
